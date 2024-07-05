@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1eb;
+}
+
+header{
+    background-color: #bc98f3;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer{
+    background-color: #bc98f3;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-1{
+    width: 50px;
+}
+
+.mensaje {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000;
+}
+
+.mensaje.mostrar {
+    opacity: 1;
+}
+
+.tituloP{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.titulo2{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 34px;
+}
+.icono {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-busqueda {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#tituloPelicula {
+    width: 70%;
+    padding: 0.5rem;
+    border-color: #7360f9;
+    border-style: dashed;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#botonBuscar:hover{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: #7360f9;
+    background-color: #bc98f3;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#botonBuscar{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: #7360f9;
+    color: #7360f9;
+    background-color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.error {
+    color: red;
+}
+.btn{
+    margin: 5px;
+}
+
+.btn-danger{
+    margin-top: 10px;
+
+}
+.pelicula {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 1 1 calc(33.333% - 3rem);
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pelicula img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.contenedor-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+@media (max-width: 800px) {
+    .pelicula {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-busqueda {
+        flex-direction: column;
+    }
+
+    #tituloPelicula {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pelicula {
+        flex: 1 1 100%;
+    }
+}
+
